@@ -1,7 +1,7 @@
 def decorator(func):
-    def wrapper(wrapper_parameter):
+    def wrapper(*args, **kwargs):
         print('decoration begins')
-        func(wrapper_parameter)
+        func(*args, **kwargs)
         print('decoration ends')
     return wrapper
 
